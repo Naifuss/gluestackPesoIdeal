@@ -3,6 +3,7 @@ import { useState } from "react";
 
 
 import mulher from "../../../assets/gwen.png"
+import homem from "../../../assets/milees.png"
 
 export default function Main(){
     const [peso,setPeso] = useState("72")
@@ -71,7 +72,7 @@ export default function Main(){
                         <Text fontWeight="$bold">{resultado}</Text>
                     </Box>
                 </FormControl>
-                <Imaage source={sexo ? mulher : homem} alt="imagem do tipo do sexo"/>
+                <Image source={sexo ? mulher : homem} alt="imagem do tipo do sexo"  height={'25%'}/>
             </Center>
         </Box>
     )
